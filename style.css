@@ -1,0 +1,32 @@
+/*simple reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/*generic not used for charts*/
+body {
+    background: #ddd;
+    overflow-x: hidden;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+}
+body a, body a:hover, body a:visited, body a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*charts container - change font-size to scale charts */
+#container {font-size:1em; overflow:hidden; position:relative; margin:1em auto; width:10em; z-index:0}
+#container > div {position:relative; width:10em; height:10em; overflow:hidden;float:left; margin:0em -10em 1em 0em;}
+#container > div > div {position:absolute; bottom:0; left:0; width: 0; height: 0; border-left: 5em solid transparent; border-right: 5em solid transparent;}
+#container > div .l1 {opacity:0.9; border-bottom:0em solid #555; transition: all 700ms ease-in-out 0s; -webkit-transition: all 700ms ease-in-out 0s; -moz-transition: all 700ms ease-in-out 0s;}
+
+/*columns*/
+#container .columns {overflow:hidden; position:absolute; width:100%; height:10em; top:0; left:0; margin:0; padding:0; z-index:1;}
+#container .columns li {display:block; width:100%; height:0.95em; border-top:1px solid #ccc}
+#container span {display:block; clear:both; border-left:1.2em solid; font-size:0.8em; margin:0.5em 0; padding-left:0.2em}
