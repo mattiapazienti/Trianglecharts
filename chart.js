@@ -41,4 +41,4 @@ var columns = function() {
 };
 
 $(document).ready(columns); 
-$(document).ready(chart); //this can be launched onclick on index too
+$(document).ready(chart); //onclick works as well
